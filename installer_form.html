@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+<title>Cisco Openstack Edition Installation Setup</title>
+</head>
+<body>
+<p><u><h1>Cisco Openstack Installation Setup</h1></u></p>
+<p><i><h4>Please answer the following</h4></i></p>
+<form action="/install" method="post">
+<table border=1>
+<tr><td>Distribution Location</td>  <td align="right"><input type="text" name="location" value="ftp://ftpeng.cisco.com/openstack/cisco"></td></tr>
+<tr><td>Proxy URL</td>  <td align="right"><input type="text" name="proxy_url" value="proxy-server.domain.name"></td></tr>
+<tr><td>Hostname of the build node</td> <td align="right"> <input type="text" name="build_node_name" value="build-server"></td><tr>
+<tr><td>Domain Name</td> <td align="right"><input type="text" name="domain_name" value="domain.name"></td></tr>
+<tr><td>NTP Server</td> <td align="right">  <input type="text" name="ntp_server" value="time-server.cisco.com"></td></tr>
+<tr><td>Build node ip address</td> <td align="right">  <input type="text" name="cobbler_node_ip" value="192.168.242.100"></td></tr>
+<tr><td>Build node subnet</td> <td align="right">  <input type="text" name="build_node_subnet" value="192.168.242.0"></td></tr>
+<tr><td>Build node netmask</td> <td align="right">  <input type="text" name="build_node_netmask" value="255.255.255.0"></td></tr>
+<tr><td>Build node gateway</td> <td align="right">  <input type="text" name="build_node_gateway" value="192.168.242.1"></td></tr>
+<tr><td>Controller node ip address</td> <td align="right">  <input type="text" name="controller_node_ip" value="192.168.242.10"></td></tr>
+<tr><td>Controller node subnet</td> <td align="right">  <input type="text" name="controller_node_subnet" value="192.168.242.0"></td></tr>
+<tr><td>Hostname of the Controller node</td> <td align="right">  <input type="text" name="controller_node_name" value="control-server"></td></tr>
+<tr><td>Compute node ip address</td> <td align="right">  <input type="text" name="compute_node_ip" value="192.168.242.21"></td></tr>
+<tr><td>MySQL Database Network</td> <td align="right">  <input type="text" name="db_allowed_network" value="192.168.242.%"></td></tr>
+<tr><td>Public Network interface</td> <td align="right">  <input type="text" name="public_interface" value="eth0"></td></tr>
+<tr><td>Private Network interface</td> <td align="right">  <input type="text" name="private_interface" value="eth0"></td></tr>
+<tr><td>External Network interface</td> <td align="right">  <input type="text" name="external_interface" value="eth1"></td></tr>
+<tr><td>Drive on which openstack is deployed on each node</td> <td align="right">  <input type="text" name="install_drive" value="/dev/sda"></td></tr>
+
+</table>
+<br><input type="submit" value="Submit"></br>
+</form>
+</body>
+</html>
